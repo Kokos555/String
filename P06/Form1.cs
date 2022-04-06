@@ -43,7 +43,10 @@ namespace P06
             string cele_veta = textBox1.Text;
             slovo = textBox1.Text;//Ahoj  jak se mas
             slovo = slovo.Trim();
-            //slovo = slovo.Replace(" ", "");
+            while (slovo.Contains("  "))
+            {
+                slovo = slovo.Replace("  ", " ");
+            }
             MessageBox.Show(string.Format("({0})=({1}) ", cele_veta, slovo));
         }
     }
