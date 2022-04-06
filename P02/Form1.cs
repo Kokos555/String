@@ -20,6 +20,7 @@ namespace P02
         private void button1_Click(object sender, EventArgs e)
         {
             int cislo = Convert.ToInt32(textBox2.Text);
+            cislo = cislo % 26;
             string text = textBox1.Text;
             string test = "";
             int znak;
