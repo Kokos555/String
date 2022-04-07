@@ -25,7 +25,7 @@ namespace P06
             int i = 0;
             while (i < slovo.Length-1)
             {
-                if (slovo[i] == ' '&&slovo[i+1]==' ')
+                if (slovo[i] == ' ' && slovo[i + 1] == ' ')
                 {
                     slovo = slovo.Remove(i, 1);
                 }
